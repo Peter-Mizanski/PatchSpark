@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/home"
+        android:id="@+id/menu_home"
         android:icon="@drawable/home"
         app:showAsAction="ifRoom"
         android:title="@string/home" />
     <item
-        android:id="@+id/general"
+        android:id="@+id/menu_general"
         app:showAsAction="never"
         android:title="@string/general" />
     <item
-        android:id="@+id/specific"
+        android:id="@+id/menu_specific"
         app:showAsAction="never"
         android:title="@string/specific" />
     <item
-        android:id="@+id/challenge"
+        android:id="@+id/menu_challenge"
         app:showAsAction="never"
         android:title="@string/challenges" />
 
