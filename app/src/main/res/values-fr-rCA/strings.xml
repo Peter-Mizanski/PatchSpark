@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PatchSpark</string>
+    <string name="home">Page d\'accueil</string>
+    <string name="general">Idées générales de programmation</string>
+    <string name="specific">Idées de programmation de modules spécifiques</string>
+    <string name="challenges">Défis de programmation</string>
+</resources>

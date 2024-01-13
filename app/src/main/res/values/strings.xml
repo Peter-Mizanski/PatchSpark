@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PatchSpark</string>
+    <string name="home">Home</string>
+    <string name="general">General Patch Ideas</string>
+    <string name="specific">Specific Module Patch Ideas</string>
+    <string name="challenges">Patch Challenges</string>
+</resources>

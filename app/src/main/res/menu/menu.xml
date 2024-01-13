@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/general"
+        app:showAsAction="never"
+        android:title="@string/general" />
+    <item
+        android:id="@+id/specific"
+        app:showAsAction="never"
+        android:title="@string/specific" />
+    <item
+        android:id="@+id/challenge"
+        app:showAsAction="never"
+        android:title="@string/challenges" />
+
+</menu>
