@@ -4,4 +4,6 @@
     <string name="general">General Patch Ideas</string>
     <string name="specific">Specific Module Patch Ideas</string>
     <string name="challenges">Patch Challenges</string>
+    <string name="regen">Regenerate</string>
+    <string name="no_data">Uh Oh! No Data!</string>
 </resources>

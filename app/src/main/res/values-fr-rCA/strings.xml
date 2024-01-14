@@ -5,4 +5,6 @@
     <string name="general">Idées générales de programmation</string>
     <string name="specific">Idées de programmation de modules spécifiques</string>
     <string name="challenges">Défis de programmation</string>
+    <string name="regen">Régénérer</string>
+    <string name="no_data">Euh oh! Pas de données!</string>
 </resources>

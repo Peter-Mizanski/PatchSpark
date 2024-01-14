@@ -1,0 +1,20 @@
+1,Use audio-rate modulation
+2,Gate it through a VCA
+3,Ramp it up quickly
+4,Ramp it up slowly
+5,Ramp it down quickly
+6,Ramp it down slowly
+7,Use a fast triangle-wave LFO
+8,Use a slow triangle-wave LFO
+9,Modulate the amplitude quickly
+10,Modulate the amplitude slowly
+11,Modulate the frequency quickly
+12,Modulate the frequency slowly
+13,Attenuate it
+14,Invert it
+15,Mix it with a sine LFO
+16,Mix it with a triangle LFO
+17,Mix it with an upward saw LFO
+18,Mix it with a downward saw LFO
+19,Mix it with a square LFO
+20,Mix it with a PWM LFO
