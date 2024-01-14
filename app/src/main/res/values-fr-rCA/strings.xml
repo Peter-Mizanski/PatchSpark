@@ -7,4 +7,10 @@
     <string name="challenges">Défis de programmation</string>
     <string name="regen">Régénérer</string>
     <string name="no_data">Euh oh! Pas de données!</string>
+    <string name="please_select">Pour générer une invite spécifique au module,
+                            sélectionnez d\'abord un fabricant dans le menu ci-dessous</string>
+    <string name="select_menu">Sélectionnez un fabricant</string>
+    <string name="select_model">Sélectionnez un modèle</string>
+    <string name="next_step">Ensuite, cliquez sur le bouton Continuer pour sélectionner un module</string>
+    <string name="continue_btn">Continuer</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.example.patchspark;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;

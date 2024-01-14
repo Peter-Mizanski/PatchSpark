@@ -5,16 +5,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import androidx.appcompat.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ToolbarNavigation extends AppCompatActivity {
-    public void setupToolbar(int toolbarId) {
-        Toolbar toolbar = findViewById(toolbarId);
-        setSupportActionBar(toolbar);
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -36,6 +29,11 @@ public class ToolbarNavigation extends AppCompatActivity {
             return true;
         } else if (menuItem.getItemId() == R.id.menu_challenge) {
             Intent intent = new Intent(this, Challenges.class);
+            startActivity(intent);
+            finish();
+            return true;
+        } else if (menuItem.getItemId() == R.id.menu_module_select) {
+            Intent intent = new Intent(this, ManufacturerSelector.class);
             startActivity(intent);
             finish();
             return true;

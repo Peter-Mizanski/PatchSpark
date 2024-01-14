@@ -11,7 +11,7 @@
         app:showAsAction="never"
         android:title="@string/general" />
     <item
-        android:id="@+id/menu_specific"
+        android:id="@+id/menu_module_select"
         app:showAsAction="never"
         android:title="@string/specific" />
     <item

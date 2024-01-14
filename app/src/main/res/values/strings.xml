@@ -6,4 +6,10 @@
     <string name="challenges">Patch Challenges</string>
     <string name="regen">Regenerate</string>
     <string name="no_data">Uh Oh! No Data!</string>
+    <string name="please_select">To generate a module-specific prompt,
+                                first select a manufacturer from the menu below</string>
+    <string name="select_menu">Select a Manufacturer</string>
+    <string name="select_model">Select a Model</string>
+    <string name="next_step">Then, click the Continue button to select a module</string>
+    <string name="continue_btn">Continue</string>
 </resources>
