@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:id="@+id/general_patch_text_view" />
+        android:id="@+id/challenge_text_view" />
     <Space
         android:layout_width="wrap_content"
         android:layout_height="50dp" />
@@ -37,7 +37,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/general_regen"
+            android:id="@+id/challenge_regen"
             android:text="@string/regen" />
     </LinearLayout>
 
