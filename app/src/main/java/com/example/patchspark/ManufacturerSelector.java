@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -33,10 +34,11 @@ public class ManufacturerSelector extends AppCompatActivity {
         continueBtn.setOnClickListener((click) -> {
             // get Make
             String selectedMake = makeSpinner.getSelectedItem().toString();
-            // pass Make to ModuleSelector and start that Activity
-            Intent intent = new Intent(this, ModuleSelector.class);
-            intent.putExtra("selectedMake", selectedMake);
-            startActivity(intent);
+            Log.d("MANUFACTURER_DEBUG", "Selected Make: " + selectedMake);
+            // pass Make to ModuleSelector & Specific. Start ModuleSelector Activity
+            Intent intentMake = new Intent(this, ModuleSelector.class);
+            intentMake.putExtra("selectedMake", selectedMake);
+            startActivity(intentMake);
         });
     }
 

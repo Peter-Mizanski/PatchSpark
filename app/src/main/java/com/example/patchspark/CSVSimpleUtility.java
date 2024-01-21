@@ -1,12 +1,14 @@
 package com.example.patchspark;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
@@ -80,4 +82,39 @@ public class CSVSimpleUtility {
         }
         return models;
     }
+
+
+    public String setSpecificPromptTitle(String selectedMake, String selectedModel) {
+        Log.d("MODEL_DEBUG", "Selected Model: " + selectedModel);
+        Log.d("MAKE_DEBUG", "Selected Make: " + selectedMake);
+        for (String[] row : csvData) {
+            Log.d("ROW_DEBUG", "Row: " + Arrays.toString(row));
+            if (row.length >= 4 && row[1].equals(selectedMake) && row[2].equals(selectedModel)) {
+                String title = row[3];
+                Log.d("TITLE_DEBUG", "Title: " + title);
+                return title;
+            }
+        }
+        Log.d("TITLE_DEBUG", "No title found");
+        return "No title found";
+    }
+
+    public String setSpecificPromptIdea(String selectedMake, String selectedModel) {
+        Log.d("MODEL_DEBUG", "Selected Model: " + selectedModel);
+        Log.d("DEBUG", "Selected Make: " + selectedMake + ", Selected Model: " + selectedModel);
+
+        for (String[] row : csvData) {
+            Log.d("ROW_DEBUG", "Row: " + Arrays.toString(row));
+            if (row.length >= 4 && row[1].equals(selectedMake) && row[2].equals(selectedModel)) {
+                String idea = row[4];
+                Log.d("IDEA_DEBUG", "Idea: " + idea);
+                return idea;
+            }
+        }
+        Log.d("IDEA_DEBUG", "No idea found");
+        return "No idea found";
+    }
+
+
+
 }
