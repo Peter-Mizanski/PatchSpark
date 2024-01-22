@@ -7,12 +7,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseOpener extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "PatchSparkDB";
     private static final int DATABASE_VERSION = 1;
-    private static final String TABLE_NAME = "MODULE_PROMPTS";
-    private static final String COLUMN_MAKE = "MAKE";
-    private static final String COLUMN_MODULE = "MODULE";
-    private static final String COLUMN_TITLE = "TITLE";
-    private static final String COLUMN_PROMPT = "PROMPT";
-    private static final String COLUMN_INCLUDE = "INCLUDE";
+    public static final String TABLE_NAME = "MODULE_PROMPTS";
+    public static final String COLUMN_MAKE = "MAKE";
+    public static final String COLUMN_MODULE = "MODULE";
+    public static final String COLUMN_TITLE = "TITLE";
+    public static final String COLUMN_PROMPT = "PROMPT";
+    public static final String COLUMN_INCLUDE = "INCLUDE";
 
 
 
