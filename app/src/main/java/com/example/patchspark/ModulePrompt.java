@@ -4,15 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class ModulePrompt extends AppCompatActivity {
 
-    TextView promptTitle;
-    TextView specificPrompt;
+    TextView promptTitle, specificPrompt;
     DatabaseOpener databaseOpener;
-    String selectedMake;
-    String selectedModel;
+    String selectedMake, selectedModel;
 
 
     @Override
@@ -31,9 +30,21 @@ public class ModulePrompt extends AppCompatActivity {
         selectedMake = getIntent().getStringExtra("selectedMake");
         selectedModel = getIntent().getStringExtra("selectedModel");
 
-        String[] selectedPrompt = databaseOpener.getRandomPrompt(selectedMake, selectedModel);
+        updatePrompt();
 
-        promptTitle.setText(selectedPrompt[0]);
-        specificPrompt.setText(selectedPrompt[1]);
+        Button regen = (Button) findViewById(R.id.specific_regen);
+        regen.setOnClickListener(view -> updatePrompt());
+    }
+
+
+    private void updatePrompt() {
+        String[] selectedPrompt = databaseOpener.getRandomPrompt(selectedMake, selectedModel);
+        if (selectedPrompt != null && selectedPrompt.length == 2) {
+            promptTitle.setText(selectedPrompt[0]);
+            specificPrompt.setText(selectedPrompt[1]);
+        } else {
+            promptTitle.setText(R.string.no_data);
+            specificPrompt.setText(R.string.no_data);
+        }
     }
 }
