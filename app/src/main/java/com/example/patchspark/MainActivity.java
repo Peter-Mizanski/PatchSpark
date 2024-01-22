@@ -19,7 +19,7 @@ public class MainActivity extends ToolbarNavigation {
 
         Button specific = (Button) findViewById(R.id.specific);
         specific.setOnClickListener(view ->
-                startActivity(new Intent(this, ManufacturerSelector.class)));
+                startActivity(new Intent(this, ManuSelector.class)));
 
         Button challenge = (Button) findViewById(R.id.challenges);
         challenge.setOnClickListener(view ->
