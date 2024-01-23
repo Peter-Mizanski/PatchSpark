@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class General extends ToolbarNavigation {
+public class GeneralPrompt extends ToolbarNavigation {
 
     private TextView generalIdea;
     private CSVSimpleUtility csvSimpleUtility;

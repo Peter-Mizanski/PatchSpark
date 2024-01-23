@@ -15,11 +15,11 @@ public class MainActivity extends ToolbarNavigation {
 
         Button general = (Button) findViewById(R.id.general);
         general.setOnClickListener(view ->
-                startActivity(new Intent(this, General.class)));
+                startActivity(new Intent(this, GeneralPrompt.class)));
 
         Button specific = (Button) findViewById(R.id.specific);
         specific.setOnClickListener(view ->
-                startActivity(new Intent(this, ManuSelector.class)));
+                startActivity(new Intent(this, MakeSelector.class)));
 
         Button challenge = (Button) findViewById(R.id.challenges);
         challenge.setOnClickListener(view ->

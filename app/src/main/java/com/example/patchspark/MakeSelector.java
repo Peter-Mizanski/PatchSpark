@@ -1,18 +1,16 @@
 package com.example.patchspark;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
 import java.util.List;
 
-public class ManuSelector extends ToolbarNavigation {
+public class MakeSelector extends ToolbarNavigation {
 
     private Spinner makeSpinner;
     private DatabaseOpener databaseOpener;
@@ -37,7 +35,7 @@ public class ManuSelector extends ToolbarNavigation {
         Button continueBtn = (Button) findViewById(R.id.continueBtn);
         continueBtn.setOnClickListener((click) -> {
             String selectedMake = makeSpinner.getSelectedItem().toString();
-            Intent intent = new Intent(ManuSelector.this, ModelSelector.class);
+            Intent intent = new Intent(MakeSelector.this, ModelSelector.class);
             intent.putExtra("selectedMake", selectedMake);
             startActivity(intent);
         });

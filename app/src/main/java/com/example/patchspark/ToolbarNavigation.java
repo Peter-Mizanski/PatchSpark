@@ -23,7 +23,7 @@ public class ToolbarNavigation extends AppCompatActivity {
             finish();
             return true;
         } else if (menuItem.getItemId() == R.id.menu_general) {
-            Intent intent = new Intent(this, General.class);
+            Intent intent = new Intent(this, GeneralPrompt.class);
             startActivity(intent);
             finish();
             return true;
@@ -33,7 +33,7 @@ public class ToolbarNavigation extends AppCompatActivity {
             finish();
             return true;
         } else if (menuItem.getItemId() == R.id.menu_module_select) {
-            Intent intent = new Intent(this, ManufacturerSelector.class);
+            Intent intent = new Intent(this, MakeSelector.class);
             startActivity(intent);
             finish();
             return true;
